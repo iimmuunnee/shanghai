@@ -1,5 +1,5 @@
 // 상하이 여행 페이지 오프라인 캐시
-const V = "shanghai-9e07997703";
+const V = "shanghai-b9208ff94f";
 const FILES = ["./", "./index.html", "./manifest.webmanifest",
                "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
