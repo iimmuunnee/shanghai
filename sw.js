@@ -1,5 +1,5 @@
 // 상하이 여행 페이지 오프라인 캐시
-const V = "shanghai-00f697eb97";
+const V = "shanghai-9e07997703";
 const FILES = ["./", "./index.html", "./manifest.webmanifest",
                "./icon-192.png", "./icon-512.png", "./apple-touch-icon.png"];
 
@@ -23,7 +23,7 @@ self.addEventListener("fetch", e => {
         if (res && res.ok) caches.open(V).then(c => c.put(e.request, res.clone()));
         return res;
       }).catch(() => hit || caches.match("./index.html"));
-      return hit || net;                              // 캐시 우선, 뒤에서 갱신
+      return hit || net;
     })
   );
 });
